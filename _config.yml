@@ -1,6 +1,6 @@
 # Site settings
 title: Citiparks Cleaning Contract
 email: pittsburgh@codeforamerica.org
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/cleaning-pgh" # the subpath of your site, e.g. /blog/
 # Build settings
 markdown: kramdown
