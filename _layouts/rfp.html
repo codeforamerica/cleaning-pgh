@@ -1,0 +1,20 @@
+---
+layout: post
+---
+
+{{ content }}
+
+<div id="disqus_thread">
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="{{ site.url }}/cleaning-pgh/js/inlineDisqus.js"></script>
+<script>
+  disqus_shortname = 'cleaningpittsburgh';
+  jQuery(document).ready(function() {
+    jQuery("p").inlineDisqussions({
+      highlighted: true,
+      background: '#d4d8d5'
+    });
+  });
+</script>
