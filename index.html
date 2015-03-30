@@ -28,6 +28,13 @@ layout: default
     <div class="spacer-20"></div>
             This upcoming opportunity includes several different park facilities. You will not have to submit a proposal for every facility. You may submit proposals for as few or as many facilities as you like.
 
-    </div>
 
+    {% for post in site.posts %}
+    <div class="spacer-20"></div>
+      <p>View the RFP: </p>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    {% endfor %}
+  </div>
 </div>
