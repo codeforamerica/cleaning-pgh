@@ -120,10 +120,8 @@ a {
 }
 
 .footer-wrapper {
-    padding-top: 15px;
     background-color: #CBCBCB;
     @extend %clearfix;
-    padding: $spacing-unit 0;
     margin-left: auto;
     margin-right: auto;
 
