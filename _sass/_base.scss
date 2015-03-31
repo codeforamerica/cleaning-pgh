@@ -57,23 +57,35 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-.greenhead {
-    color: $brand-color;
+.whitehead {
+    font-weight: 800;
+    color: #FFF;
     font-size: $large-font-size;
 }
 
-.greenhead-strong {
-  font-weight: 900; 
-  color: #006430;
-  font-size: $large-font-size; 
+.yellowhead { 
+    font-weight: 800;
+    color: #FFFF00;
+    font-size: $large-font-size; 
+}
+
+.greenhead {
+    font-weight: 800;
+    color: $brand-color;
+    font-size: $large-font-size;  
+}
+
+.light {
+    font-weight: 300;
 }
 
 /**
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
+    color: $text-color;
+    text-decoration: underline;
+    font-weight: bold;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -94,6 +106,7 @@ a {
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     padding-top: 15px;
+    background-color: $brand-color;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
@@ -106,6 +119,21 @@ a {
     }
 }
 
+.footer-wrapper {
+    padding-top: 15px;
+    background-color: #CBCBCB;
+    @extend %clearfix;
+    padding: $spacing-unit 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
 
 
 /**
