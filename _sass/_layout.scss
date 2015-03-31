@@ -105,6 +105,9 @@
     }
 }
 
+.header-background {
+    background-color: $brand-color;
+}
 
 
 /**
@@ -136,28 +139,32 @@
 
 #mce-EMAIL { 
     width: 300px;
-    font-size: $small-font-size; 
+    font-size: $base-font-size; 
     font-family: $base-font-family;
     color: $grey-color;
     border: 1px solid #cccccc;
     display: inline-block;
-    padding: 6px 12px;
+    padding: 12px 12px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
   
 }
 
 #mc-embedded-subscribe {
     display: inline-block;
-    margin-bottom: 0;
     font-weight: normal;
     text-align: center;
     font-family: $base-font-family;
-    vertical-align: middle;
-    cursor: pointer;
     background-image: none;
+    background-color: #FFFF00;
     border: 1px solid transparent;
     white-space: nowrap;
-    padding: 6px 12px;
-    font-size: $small-font-size;
+    padding: 12px 12px;
+    font-size: $base-font-size;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -167,4 +174,6 @@
 .spacer-20 {
   padding-top: 20px;
 }
+
+
 
