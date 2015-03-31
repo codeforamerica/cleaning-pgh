@@ -17,6 +17,16 @@
       ga('send', 'pageview');
 
     </script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="{{ site.url }}/cleaning-pgh/js/inlineDisqus.js"></script>
+    <script>
+      disqus_shortname = 'cleaningpittsburgh';
+      jQuery(document).ready(function() {
+        jQuery("p").inlineDisqussions({
+          highlighted: true
+        });
+      });
+    </script>
 
   </body>
   
