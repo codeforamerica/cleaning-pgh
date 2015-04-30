@@ -4,5 +4,27 @@
     This page was made by <a href="http://www.codeforamerica.org">Code for America</a>, <a href="http://pittsburghpa.gov/citiparks/">Citiparks</a>, and the <a href="http://pittsburghpa.gov/innovation-performance/home">Department of Innovation & Performance</a> of the City of Pittsburgh
   </div>
 </div>
-
 </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60542627-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="{{ site.url }}/cleaning-pgh/js/inlineDisqus.js"></script>
+<script>
+  disqus_shortname = 'cleaningpittsburgh';
+  jQuery(document).ready(function() {
+    jQuery("p").inlineDisqussions({
+      highlighted: true
+    });
+  });
+</script>
+  </body>
+
+</html>
