@@ -127,6 +127,22 @@
     font-size: 20px;
 }
 
+/**
+* Tabs/Content
+*/
+
+.content-block {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.tab {
+    &.active {
+        background: red;
+    }
+}
 
 /**
 * Form

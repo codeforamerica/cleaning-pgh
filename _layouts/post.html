@@ -2,14 +2,24 @@
 layout: default
 ---
 <div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
+<div class="tab-wrapper">
+    <button class="tab active" id="faq">FAQ</button>
+    <button class="tab" id="rfp">RFP</button>
+</div>
   <article class="post-content">
-    {{ content }}
+    <div class="content-block active" id="faq-content">
+        {% for faq in page.faqs %}
+        <div class="greenhead">{{ faq.question }}</div>
+
+          <p>
+            {{ faq.answer }}
+          </p>
+
+        {% endfor %}
+    </div>
+    <div class="content-block" id="rfp-content">
+        {{ content }}
+    </div>
   </article>
 
 </div>
