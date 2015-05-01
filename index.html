@@ -2,14 +2,29 @@
 layout: default
 ---   
 
-{% for faq in site.data.faq %}
-<div class="greenhead">{{ faq.question }}</div>
+{% for post in site.posts %}
+    {% if post.featured %}
+        <div class="post">
+        <div class="tab-wrapper">
+            <button class="tab active" id="faq">FAQ</button>
+            <button class="tab" id="rfp">RFP</button>
+        </div>
+          <article class="post-content">
+            <div class="content-block active" id="faq-content">
+                {% for faq in post.faqs %}
+                <div class="greenhead">{{ faq.question }}</div>
 
-  <p>
-    {{ faq.answer }}
-  </p>
+                  <p>
+                    {{ faq.answer }}
+                  </p>
 
+                {% endfor %}
+            </div>
+            <div class="content-block" id="rfp-content">
+                {{ post.content }}
+            </div>
+          </article>
+
+        </div>
+    {% endif %}
 {% endfor %}
-
-<div id="disqus_thread">
-</div>
