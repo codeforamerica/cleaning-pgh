@@ -65,16 +65,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: $large-font-size;
 }
 
-.yellowhead { 
+.yellowhead {
     font-weight: 800;
     color: #FFFF00;
-    font-size: $large-font-size; 
+    font-size: $large-font-size;
 }
 
 .greenhead {
     font-weight: 800;
     color: $brand-color;
-    font-size: $large-font-size;  
+    font-size: $large-font-size;
     line-height: 130%;
 }
 
@@ -100,6 +100,20 @@ a {
     }
 }
 
+.yellowhead-link {
+    color: #FF0000;
+    text-decoration: underline;
+    font-weight: bold;
+
+    &:visited {
+        color: #FFFF00
+    }
+
+    &:hover {
+        color: darken(#FFFF00, 10%);
+        text-decoration: underline
+    }
+}
 
 /**
  * Wrapper
